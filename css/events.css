@@ -1,10 +1,13 @@
 .events {
+    /* max-width: 80%;
+    margin: auto; */
     padding: 1rem;
-    margin: 2rem;
+  
 }
 
 .title {
     font-size: 2rem;
+    padding-left: 1rem;
 }
 
 .gallery {
@@ -53,16 +56,59 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #bbb;
+    background-color: #fff; 
+    border: 0.1rem solid #234C63;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .active {
-    background-color: #717171;
+    background-color: #234C63;
 }
 
 .text {
     text-align: center;
+}
+.text-wh{
+    margin: 10px; /* Ajusta el margen para separar las imágenes */
+}
+
+.card{
+    margin-bottom: 2rem;
+    background-color: #6C8897;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    place-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.img{
+    width: 100%;
+   
+}
+.firstRow {
+  
+    display: flex;
+    flex-direction: column;
+}
+#titleSalon{
+    font-size: 2rem;
+    padding-bottom: 1rem; /* Espacio entre el título y el texto */
+    
+}
+#textSalon{
+    font-size: 1rem
+    
+}
+#check-list {
+    list-style-type: none; /* Elimina los estilos predeterminados de la lista */
+    
+}
+
+#check-list li {
+    padding-left: 20px; /* Espacio para la imagen */
+    background: url('../img/check.png') no-repeat left center; /* Ruta de la imagen y posición */
+    background-size: 16px; /* Tamaño de la imagen */
+    margin-bottom: 1rem;
 }
