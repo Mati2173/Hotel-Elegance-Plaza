@@ -1,0 +1,48 @@
+#footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container a {
+    text-decoration: none;
+}
+
+.footer-content {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    margin: 40px 0;
+}
+
+.footer-item img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-item-top h3 {
+    font-weight: normal;
+    display: inline;
+    vertical-align: middle;
+}
+
+.footer-item-top, .footer-item-bottom {
+    margin: 15px 0;
+}
+
+#LogoSC {
+    padding-top: 20px;
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
