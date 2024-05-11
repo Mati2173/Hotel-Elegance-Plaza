@@ -1,0 +1,128 @@
+.events {
+    /* max-width: 80%;
+    margin: auto; */
+    padding: 1rem;
+  
+}
+
+.title {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: white; 
+    border: 0.08rem solid #234C63;
+    border-radius: 50%;
+    margin: 0 9px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #234C63;
+}
+
+.text {
+    text-align: center;
+}
+.text-wh{
+    margin: 10px; /* Ajusta el margen para separar las imágenes */
+}
+
+.card{
+    margin-bottom: 2rem;
+    background-color: #6C8897;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    place-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.img{
+    width: 100%;
+   
+}
+.firstRow {
+  
+    display: flex;
+    flex-direction: column;
+}
+#titleSalon{
+    font-size: 2rem;
+    padding-bottom: 1rem; /* Espacio entre el título y el texto */
+    
+}
+#textSalon{
+    font-size: 1rem
+    
+}
+#check-list {
+    list-style-type: none; /* Elimina los estilos predeterminados de la lista */
+    
+}
+
+#check-list li {
+    padding-left: 20px; /* Espacio para la imagen */
+    background: url('../img/check.png') no-repeat left center; /* Ruta de la imagen y posición */
+    background-size: 16px; /* Tamaño de la imagen */
+    margin-bottom: 1rem;
+}
+
+
+/* ale */
+.textRestaurant {
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 1.3em;
+}
+.next img, .prev img{
+    width: 100%;
+}
