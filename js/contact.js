@@ -24,6 +24,9 @@ $(document).ready(function(){
     $('#phone').keypress(function(e){
         if(String.fromCharCode(e.keyCode).match(/[^0-9]/g)) return false;
     });
+    $('#fname').keypress(function(e){
+        if(String.fromCharCode(e.keyCode).match(/[^a-zA-Z áéíóú ÁÉÍÓÚ]/gi)) return false;
+    });
     $('.datepicker').datepicker({
         dateFormat: "dd/mm/yy",
         showOn: 'both',
