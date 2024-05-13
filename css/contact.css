@@ -151,16 +151,14 @@ label{
 .info-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0 30%;
     width: 100%;
     margin-left: 10%;
 }
-.icon{
-    display: ruby;
-}
 .info-icon{
     width: 28px;
-    float: left;
     margin-right: 1%;
+    float: left;
 }
 .written-info{
     margin: 0;
