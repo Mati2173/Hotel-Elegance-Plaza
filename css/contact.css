@@ -73,3 +73,6 @@ label{
     color: #E76F51;
     background-color: transparent;
 }
+.datepicker-box{
+    display: ruby;
+}
