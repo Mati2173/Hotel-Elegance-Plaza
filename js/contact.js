@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
     $('.datepicker').datepicker({
         dateFormat: "dd/mm/yy",
-        showOn: 'button',
+        showOn: 'both',
         buttonImage: 'img/icons/calendar-icon.png',
         buttonImageOnly: true,
         buttonText: 'Seleccione una fecha',
@@ -42,6 +42,26 @@ $(document).ready(function(){
     //Me aseguro que si se resetea el formulario, se vuelva a deshabilitar el picker de partida
     $('#reset').on('click', function(){
         $('#leave').datepicker('option', 'disabled', true);
+    });
+    //Cuando se envíe el formulario, deshabilito la recarga de la página, borro los datos cargados, reproduzco la animación de carga por 2 segundos y muestro el div dando gracias
+    $('#form').submit(function(e){
+        e.preventDefault();
+        $('#reset').click();
+        $('#overlay-test').removeClass('hidden');
+        $('#loading').addClass('loader');
+        $('#loading').removeClass('hidden');
+        setTimeout(function(){
+            $('#loading').removeClass('loader');
+            $('#loading').addClass('hidden');
+            $('#thanksmodal').removeClass('hidden');
+            $('#accept').on('click', function(e){
+                console.log('works');
+                $('#thanksmodal').addClass('hidden');
+                $('#overlay-test').addClass('hidden');
+                return false;
+            });
+        }, 2000);
+        
     });
 });
 

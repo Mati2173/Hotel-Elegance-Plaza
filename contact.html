@@ -11,7 +11,6 @@
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
     <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script>$(document).ready(function(){$('#header').load('header.html');});</script>
     <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
     <!-- Funcionalidad de calendario -->
@@ -31,7 +30,7 @@
         <h1 class="text-pr">Reserva</h1>
     </div>
     <div class="r1-container">
-        <form action="">
+        <form action="" id="form">
             <div class="softborder secondary-bg">
                 <div class="form-container">
                     <div class="option-container oc-left">
@@ -71,7 +70,16 @@
             </div>
             <div class="form-button-container">
                 <input type="reset" value="Borrar" class="form-button reset-btn text-snd secondary-bd" id="reset">
-                <input type="submit" value="Enviar" class="form-button submit-btn text-wh accent-bg accent-bd">
+                <input type="submit" value="Enviar" class="form-button submit-btn text-wh accent-bg accent-bd" id="submit">
+            </div>
+            <div class="overlay hidden" id="overlay-test"></div>
+            <div class="hidden" id="loading"></div>
+            <div class="primary-bg text-wh modal hidden" id="thanksmodal">
+                <p>¡Reserva exitosa! <br>
+                    Su reserva ha sido confirmada. <br>
+                    En breve, recibirá un correo electrónico con los detalles completos. ¡Gracias por elegirnos!
+                </p>
+                <button class="form-button submit-btn text-wh accent-bg accent-bd" id="accept">Aceptar</button>
             </div>
         </form>
     </div>
