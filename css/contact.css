@@ -4,6 +4,12 @@
 .r1-container{
     margin: 2% 15% 2% 15%;
 }
+.r2-container{
+    margin-bottom: 10%;
+}
+.flex{
+    display: flex;
+}
 .softborder{
     border-radius: 10px;
     box-shadow: 1px 3px 5px 0px rgba(54, 54, 54, 0.75);
@@ -134,4 +140,24 @@ label{
 }
 .hidden{
     display: none;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-left: 10%;
+}
+.icon{
+    display: ruby;
+}
+.info{
+
+}
+.info-icon{
+    width: 28px;
+    float: none;
+    margin-right: 1%;
+}
+.written-info{
+    margin: 0;
 }
