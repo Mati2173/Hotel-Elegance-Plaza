@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <!--CSS General-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -31,10 +32,22 @@
             <p class="text-pr">Bienvenidos! Disfruta de habitaciones de lujo, exquisita gastronomía y servicios de primer nivel. Organiza eventos en nuestros modernos salones y relájate en nuestra piscina y spa. <span>Elegance Plaza es tu hogar lejos de casa</span></p>
         </div>
         <div class="slider-container">
-            <!-- Completar -->
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/home_1.png" class="active" draggable="false">
+                    <img src="img/home_2.png" draggable="false">
+                    <img src="img/home_3.png" draggable="false">
+                </div>
+                <div class="dots-container">
+                    <div class="dot primary-bd active" attr='0'"></div>
+                    <div class="dot primary-bd" attr='1'></div>
+                    <div class="dot primary-bd" attr='2'></div>
+                </div>
+            </div>
         </div>
     </section>
     <footer id="footer">
     </footer>
+    <script src="js/slider.js"></script>
 </body>
 </html>
