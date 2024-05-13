@@ -10,6 +10,12 @@
 .flex{
     display: flex;
 }
+.align-center{
+    align-items: center;
+}
+.gapped{
+    gap: 2%;
+}
 .softborder{
     border-radius: 10px;
     box-shadow: 1px 3px 5px 0px rgba(54, 54, 54, 0.75);
@@ -80,7 +86,8 @@ label{
     background-color: transparent;
 }
 .datepicker-box{
-    display: ruby;
+    display: flex;
+    align-items: center;
 }
 .overlay {
     position: fixed;
@@ -152,7 +159,7 @@ label{
 }
 .info-icon{
     width: 28px;
-    float: none;
+    float: left;
     margin-right: 1%;
 }
 .written-info{
