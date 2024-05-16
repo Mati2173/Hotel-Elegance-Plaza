@@ -16,5 +16,9 @@
     font-size: 1.3em;
 }
 
-
+.slider-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
 
