@@ -1,0 +1,61 @@
+.head-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container-services {
+    margin: 2rem; /* Ajustar el margen para dispositivos más pequeños */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-card {
+    margin-bottom: 1.5rem;
+    background-color: #6C8897;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    border-radius: 1rem;
+}
+
+.img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 80%; /* Reducir el ancho de la imagen para dispositivos más pequeños */
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame {
+    display: flex;
+}
+
+#titlePS {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 0rem; /* Reducir el espacio entre el título y el texto */
+    margin-bottom: 0; /* Eliminar el margen inferior del título */
+    margin-top: 0rem;
+}
+
+#textPS {
+    font-size: 1rem;
+    margin-top: 0rem; /* Reducir el espacio entre el título y el párrafo */
+}
+
+#check-list {
+    list-style-type: none; /* Elimina los estilos predeterminados de la lista */ 
+}
+
+#check-list li {
+    padding-left: 20px; /* Espacio para la imagen */
+    background: url('../img/check.png') no-repeat left center; /* Ruta de la imagen y posición */
+    background-size: 16px; /* Tamaño de la imagen */
+    margin-bottom: 1rem;
+}
