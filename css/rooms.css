@@ -5,7 +5,7 @@
 .container{
     display: grid;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
 }
 
 .container-cards{
@@ -14,22 +14,39 @@
 }
 
 .card {
-    width: 300px; /* Ancho de la tarjeta */
+    width: 370px; /* Ancho de la tarjeta */
+    height: 510px;
     background-color: #6C8897;
     border: 1px solid #ddd; /* Borde de la tarjeta */
     border-radius: 8px; /* Borde redondeado */
-    margin: 20px; /* Margen entre las tarjetas */
+    margin: 15px; /* Margen entre las tarjetas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
     overflow: hidden; /* Evita que el contenido sobresalga */
 }
 .card-tittle{
     justify-content: center;
     color: #F1F1F1;
-    padding: 20px; /* Espaciado interno */
+    margin-top: 0%;
 
 }
+.card-text{
+    text-align:start;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
 .card-content {
     color: #F1F1F1;
-    padding: 20px; /* Espaciado interno */
+    text-align: center;
     
+}
+.card-img{
+    width: 350px; /* Fija el ancho de la imagen */
+    height: 270px; /* Fija la altura de la imagen */
+    object-fit: contain; /* Ajusta la imagen para que cubra el área establecida */
+    border-radius: 10px; /* Esquinas redondeadas */
+/* Margen alrededor de la imagen */
+    margin-left: 10px;
+    margin-right: 10px;
 }
