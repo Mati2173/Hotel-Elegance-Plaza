@@ -18,6 +18,7 @@
     <!--CSS General-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <header id="header">
@@ -26,31 +27,32 @@
         <div class="title">
             <h3 class="text-pr">Eventos</h3>
         </div>
-        <div class="gallery">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="slides">
-                <img src="img/evento_1.png" alt="Imag 1">
-                <img src="img/evento_2.png" alt="Imag 2">
-                <img src="img/evento_3.png" alt="Imag 3">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/home_1.png" class="active" draggable="false">
+                    <img src="img/home_2.png" draggable="false">
+                    <img src="img/home_3.png" draggable="false">
+                </div>
+                <div class="dots-container">
+                    <div class="dot primary-bd active" attr='0'"></div>
+                    <div class="dot primary-bd" attr='1'></div>
+                    <div class="dot primary-bd" attr='2'></div>
+                </div>
             </div>
-            <div class="controls">
-                <button class="prev" onclick="moveSlide(-1)">◄</button>
-                <button class="next" onclick="moveSlide(1)">►</button>
+            <div class="text">
+                <p class="text-pr">
+                    Nuestros salones ofrecen un espacio versátil con servicios completos para cualquier ocasión.
+                    Desde bodas a reuniones corporativas, ofrecemos catering personalizado y un ambiente elegante. 
+                    Con instalaciones modernas y equipo de alta calidad, creamos experiencias inolvidables. 
+                    Confía en nosotros para hacer de tu evento un momento especial.
+                </p>
             </div>
-            <div class="dots"></div>
         </div>
-        <div class="text">
-            <p class="text-pr">
-                Nuestros salones ofrecen un espacio versátil con servicios completos para cualquier ocasión.
-                Desde bodas a reuniones corporativas, ofrecemos catering personalizado y un ambiente elegante. 
-                Con instalaciones modernas y equipo de alta calidad, creamos experiencias inolvidables. 
-                Confía en nosotros para hacer de tu evento un momento especial.
-            </p>
+        <div class="title">
+            <h3 class="text-pr">Salon</h3>
         </div>
         <div class="cards">
-            <div class="title">
-                <h3 class="text-pr">Salon</h3>
-            </div>
 
             <div class="card">
                 <div class="firstRow">
@@ -102,6 +104,6 @@
     </section>
     <footer id="footer">
     </footer>
-    <script src="js/gallery.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
