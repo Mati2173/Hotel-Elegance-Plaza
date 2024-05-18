@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elegance Plaza</title>
+    <!--Fuente utilizada en la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function(){$('#header').load('header.html');});</script>
+    <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
+    <!--CSS necesario para Header y Footer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CSS General-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <header id="header">
+    </header>
+    <section class="events">
+        <div class="title">
+            <h3 class="text-pr">Eventos</h3>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/home_1.png" class="active" draggable="false">
+                    <img src="img/home_2.png" draggable="false">
+                    <img src="img/home_3.png" draggable="false">
+                </div>
+                <div class="dots-container">
+                    <div class="dot primary-bd active" attr='0'"></div>
+                    <div class="dot primary-bd" attr='1'></div>
+                    <div class="dot primary-bd" attr='2'></div>
+                </div>
+            </div>
+            <div class="text">
+                <p class="text-pr">
+                    Nuestros salones ofrecen un espacio versátil con servicios completos para cualquier ocasión.
+                    Desde bodas a reuniones corporativas, ofrecemos catering personalizado y un ambiente elegante. 
+                    Con instalaciones modernas y equipo de alta calidad, creamos experiencias inolvidables. 
+                    Confía en nosotros para hacer de tu evento un momento especial.
+                </p>
+            </div>
+        </div>
+        <div class="title">
+            <h3 class="text-pr">Salon</h3>
+        </div>
+        <div class="cards">
+
+            <div class="card">
+                <div class="firstRow">
+                    <h1 class="text-wh" id="titleSalon">Salón de fiestas</h1>
+                    <p class="text-wh" id="textSalon">
+                        Celebra momentos únicos en nuestro salón.
+                        Ofrecemos un espacio versátil, personalizado y lleno de comodidades.
+                        Nuestro equipo experto se encarga de cada detalle.
+                        ¡Haz de tu evento una experiencia inolvidable!
+                    </p>
+                </div>
+                <div >
+                    <ul class="text-wh" id="check-list">
+                        <li>Decoración personalizada</li>
+                        <li>Sistema de iluminación</li>
+                        <li>Sistema de sonido</li>
+                        <li>Mobiliario y mantelería</li>
+                        <li>Servicio de catering</li>
+                        <li>Coordinador de eventos</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/salon_fiestas.png" alt="Imag 1"class = "img">
+                </div>
+            </div>
+            <div class="card">
+                <div class="firstRow">
+                    <h1 class="text-wh" id="titleSalon">Salón de conferencias</h1>
+                    <p class="text-wh" id="textSalon">
+                        Nuestro salón para eventos empresariales ofrece un espacio versátil con tecnología de punta. 
+                        Haz de tu próximo evento empresarial un éxito en nuestro espacio de primera categoría.
+                    </p>
+                </div>
+                <div >
+                    <ul class="text-wh" id="check-list">
+                        <li>Equipamiento audiovisual</li>
+                        <li>Equipo de soporte técnico</li>
+                        <li>Calefacción o Climatización</li>
+                        <li>Servicio de Catering</li>
+                        <li>Servicio de catering</li>
+                        <li>Mobiliario personalizable</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/salon_conferencias.png" alt="Imag 1"class = "img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+    </footer>
+    <script src="js/slider.js"></script>
+</body>
+</html>
