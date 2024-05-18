@@ -1,77 +1,30 @@
 .events {
-    /* max-width: 80%;
-    margin: auto; */
+    max-width: 80%;
+    margin: auto; 
     padding: 1rem;
-  
 }
 
-.title {
-    font-size: 2rem;
-    padding-left: 1rem;
-}
 
-.gallery {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slides img {
-    width: 100%;
-    height: auto;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 100;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.dots {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #fff; 
-    border: 0.1rem solid #234C63;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.active {
-    background-color: #234C63;
-}
-
-.text {
-    text-align: center;
-}
 .text-wh{
     margin: 10px; /* Ajusta el margen para separar las imágenes */
+}
+.image-container, .description-container, .slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider-container, .description-container {
+    height: auto;
+    margin: 60px auto;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Espacio entre las cards */
+    margin: 0 auto;
 }
 
 .card{
@@ -85,17 +38,20 @@
 }
 .img{
     width: 100%;
-   
 }
 .firstRow {
-  
     display: flex;
     flex-direction: column;
 }
-#titleSalon{
+.title {
+    font-size: 2rem;
+    padding-left: 1rem;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+#titleSalon {
     font-size: 2rem;
     padding-bottom: 1rem; /* Espacio entre el título y el texto */
-    
+    text-align: left; /* Alinea el título a la izquierda */
 }
 #textSalon{
     font-size: 1rem
