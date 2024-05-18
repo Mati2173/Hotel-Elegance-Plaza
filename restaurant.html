@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Elegance Plaza</title>
+    <!--Fuente utilizada en la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function(){$('#header').load('header.html');});</script>
+    <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
+    <!--CSS necesario para Header y Footer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CSS General-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="stylesheet" href="css/slider.css">
+    
+</head>
+<body>
+    <header id="header">
+    </header>
+
+    <section class="restaurant">
+        <div class="title">
+            <h3 class="text-pr">Restaurante / Salon principal</h3>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/restaurante_1.png" class="active" draggable="false" alt="Imagen">
+                    <img src="img/restaurante_2.png" draggable="false" alt="Imagen">
+                    <img src="img/restaurante_3.png" draggable="false" alt="Imagen">
+                </div>
+                <div class="dots-container">
+                    <div class="dot primary-bd active" attr='0'"></div>
+                    <div class="dot primary-bd" attr='1'></div>
+                    <div class="dot primary-bd" attr='2'></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="textRestaurant">
+            <p class="text-pr">
+                Nuestro restaurante ofrece una experiencia culinaria única, fusionando sabores locales e internacionales en platos exquisitos. Con un ambiente elegante y un equipo apasionado, cada comida se convierte en una experiencia memorable. Ven y disfruta de momentos culinarios inolvidables en nuestro hotel.
+            </p>
+        </div>
+    
+    </section>
+
+    <footer id="footer">
+    </footer>
+
+    <script src="js/slider.js"></script>
+</body>
+</html>

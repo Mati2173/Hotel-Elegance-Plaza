@@ -1,0 +1,24 @@
+.restaurant {
+    padding: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+}
+
+
+.textRestaurant {
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 1.3em;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+

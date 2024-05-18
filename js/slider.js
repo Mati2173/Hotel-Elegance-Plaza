@@ -1,4 +1,3 @@
-
 /* ELEMENTOS HTML UTILIZADOS */
 const slides = document.querySelector(".slides");
 let slideImages = document.querySelectorAll(".slides img");
