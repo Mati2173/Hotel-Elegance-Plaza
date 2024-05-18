@@ -37,7 +37,7 @@
 }
 
 #titlePS {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     padding-bottom: 0rem; /* Reducir el espacio entre el título y el texto */
     margin-bottom: 0; /* Eliminar el margen inferior del título */
