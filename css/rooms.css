@@ -50,3 +50,17 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+.container-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.buttons{
+    color: #F1F1F1;
+    width: 140px;
+    height: 55px;
+    border-color: #E76F51;
+    border: solid;
+    background-color: #E76F51;
+    border-radius: 10px;
+}
