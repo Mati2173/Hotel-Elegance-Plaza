@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Plaza</title>
+    <!--Fuente utilizada en la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function(){$('#header').load('header.html');});</script>
+    <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
+    <!--CSS necesario para Header y Footer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CSS General-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rooms.css">
+</head>
+<body>
+    <header id="header">
+    </header>
+    <!--AGREGA ACÁ EL CONTENIDO DE TU PÁGINA-->
+    <div class="container">
+        <h2 class="tittles">Habitaciones</h2>
+        <div class="container-cards">
+            <div class="card">
+                <img class="card-img" src="img/hab_suite.png" alt="Imagen 1">
+                <div class="card-content">
+                    <h2 class="card-tittle">SUITE</h2>
+                    <p class="card-text">Nuestra Suite de Lujo ofrece un refugio de elegancia y comodidad.
+                         Con una espaciosa sala de estar y una decoración sofisticada, incluye una lujosa cama king-size
+                          y un baño de lujo con bañera de hidromasaje y ducha de lluvia. Perfecta para viajeros de negocios
+                           con elegante escritorio y acceso a Internet de alta velocidad. La terraza privada ofrece vistas impresionantes.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="card-img" src="img/hab_doble.png" alt="Imagen 2">
+                <div class="card-content">
+                    <h2 class="card-tittle">DOBLE</h2>
+                    <p class="card-text">Nuestra Habitación Doble combina elegancia y funcionalidad para una experiencia inolvidable.
+                        Con una cuidadosa atención al detalle y un diseño que optimiza el espacio sin sacrificar la comodidad.
+                        Disfruta de comodidades como televisión por cable, acceso a Internet de alta velocidad y servicio de habitaciones. </p>
+                </div>
+                
+            </div>
+        
+            <div class="card">
+                <img class="card-img" src="img/hab_triple.png" alt="Imagen 3">
+                <div class="card-content">
+                    <h2 class="card-tittle">TRIPLE</h2>
+                    <p class="card-text">Nuestra Habitación Triple es un oasis de amplitud y confort. 
+                        Equipada con una cama doble y una cama individual de alta calidad, ofrece un espacio generoso sin sacrificar el estilo.
+                         El baño moderno y bien iluminado asegura un inicio fresco y revitalizante cada día.
+                          Además, disfruta de comodidades como televisión por cable, acceso a Internet de alta velocidad y servicio de habitaciones.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-button">
+            <submit>
+                <button class="buttons">Reservar</button>
+            </submit>
+        </div>
+
+    </div>
+    <footer id="footer">
+    </footer>
+</body>
+</html>
