@@ -1,11 +1,13 @@
 .events {
     max-width: 80%;
     margin: auto; 
-    padding: 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
-
-
-
+.text-pr{
+    font-size: 2em;
+}
 .text-wh{
     margin: 10px; /* Ajusta el margen para separar las imágenes */
 }
@@ -14,7 +16,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .slider-container, .description-container {
     height: auto;
     margin: 60px auto;
@@ -26,9 +27,7 @@
     gap: 2rem; /* Espacio entre las cards */
     margin: 0 auto;
 }
-
 .card{
-    margin-bottom: 2rem;
     background-color: #6C8897;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
@@ -42,29 +41,60 @@
 .firstRow {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 .title {
-    font-size: 2rem;
+    font-size: 2em;
     padding-left: 1rem;
     text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 3rem;
 }
-#titleSalon {
-    font-size: 2rem;
-    padding-bottom: 1rem; /* Espacio entre el título y el texto */
+#titleFirstRow {
+    font-size: 1.6em;
+    padding-bottom: 1em; /* Espacio entre el título y el texto */
     text-align: left; /* Alinea el título a la izquierda */
+    margin: 0;
 }
-#textSalon{
-    font-size: 1rem
-    
+#textFirstRow{
+    font-size: 1rem;
+    margin: 0;  
 }
 #check-list {
     list-style-type: none; /* Elimina los estilos predeterminados de la lista */
     
 }
-
+.check-img{
+    padding-right: 0.4rem;
+}
+.text-wh{
+    padding: 0;
+    margin: 0;
+}
 #check-list li {
-    padding-left: 20px; /* Espacio para la imagen */
-    background: url('../img/check.png') no-repeat left center; /* Ruta de la imagen y posición */
-    background-size: 16px; /* Tamaño de la imagen */
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.text-pr{
+    margin: 0;
+}
+#text-slider{
+    margin-top: 1rem;
+    font-size: 1.5em;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.button-events{
+    height: 3.5rem;
+    width: 11rem;
+    background-color: #E76F51;
+    border-color: #E76F51;
+    border-radius: 0.5rem;
+    box-shadow: none;
+}
+#button-text{
+    font-size: 1.2em;
 }
