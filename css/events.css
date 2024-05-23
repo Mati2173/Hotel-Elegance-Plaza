@@ -87,13 +87,10 @@
     justify-content: center;
     margin-top: 50px;
 }
-.button-events{
+#reserv{
     height: 3.5rem;
     width: 11rem;
-    background-color: #E76F51;
-    border-color: #E76F51;
-    border-radius: 0.5rem;
-    box-shadow: none;
+
 }
 #button-text{
     font-size: 1.2em;
