@@ -1,61 +1,82 @@
+.services {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
 .head-text {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 1em;
+    font-size: 2em;
 }
 
 .container-services {
-    margin: 2rem; /* Ajustar el margen para dispositivos más pequeños */
+    margin: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-card {
-    margin-bottom: 1.5rem;
-    background-color: #6C8897;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    border-radius: 1rem;
+.card {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1em;
+    padding: 2em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.img{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    width: 80%; /* Reducir el ancho de la imagen para dispositivos más pequeños */
+.img {
+    display: flex;
+    width: 80%;
 }
 
 .card-text {
     display: flex;
     flex-direction: column;
-}
-
-.frame {
-    display: flex;
+    justify-content: left;
 }
 
 #titlePS {
     text-align: left;
-    font-size: 2rem;
-    padding-bottom: 0rem; /* Reducir el espacio entre el título y el texto */
-    margin-bottom: 0; /* Eliminar el margen inferior del título */
-    margin-top: 0rem;
+    font-size: 1.6em;
+    padding-bottom: 0em;
+    margin-top: 0em;
 }
 
 #textPS {
-    font-size: 1rem;
-    margin-top: 0rem; /* Reducir el espacio entre el título y el párrafo */
+    font-size: 1em;
 }
 
-#check-list {
-    list-style-type: none; /* Elimina los estilos predeterminados de la lista */ 
+.check-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+    margin-left: 2em;
+    gap: 0.5em;
 }
 
-#check-list li {
-    padding-left: 20px; /* Espacio para la imagen */
-    background: url('../img/check.png') no-repeat left center; /* Ruta de la imagen y posición */
-    background-size: 16px; /* Tamaño de la imagen */
-    margin-bottom: 1rem;
+.list-item {
+    padding-left: 20px;
+    background: url('../img/check.png') no-repeat left center;
+    background-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .card-text {
+        text-align: center; /* Center text for better alignment on small screens */
+    }
 }
