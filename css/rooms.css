@@ -1,25 +1,30 @@
 .tittles{
     color: #234C63;
+    font-size: 2em;
 }
 
 .container{
     display: grid;
     align-items: center;
+    max-width: 82%;
+    height: auto;
     padding: 2%;
+    margin-top: 3rem;
 }
 
 .container-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; /* Distribuye las tarjetas uniformemente */
 }
 
 .card {
-    width: 370px; /* Ancho de la tarjeta */
-    height: 510px;
+    width: 20.7rem; /* Ancho de la tarjeta */
+    height: 38.3rem;
     background-color: #6C8897;
     border: 1px solid #ddd; /* Borde de la tarjeta */
-    border-radius: 8px; /* Borde redondeado */
-    margin: 15px; /* Margen entre las tarjetas */
+    border-radius: 0.5rem; /* Borde redondeado */
+    margin: 0.6rem; /* Margen entre las tarjetas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
     overflow: hidden; /* Evita que el contenido sobresalga */
 }
@@ -31,36 +36,37 @@
 }
 .card-text{
     text-align:start;
-    font-size: 13px;
-    margin-left: 15px;
-    margin-right: 10px;
+    font-size: 1em;
+    margin-left: 1.3rem;
+    margin-right: 1rem;
 }
 
 .card-content {
     color: #F1F1F1;
     text-align: center;
-    
 }
 .card-img{
-    width: 350px; /* Fija el ancho de la imagen */
-    height: 270px; /* Fija la altura de la imagen */
+    width: 19.5rem; /* Fija el ancho de la imagen */
+    height: 15.7rem; /* Fija la altura de la imagen */
     object-fit: contain; /* Ajusta la imagen para que cubra el área establecida */
-    border-radius: 10px; /* Esquinas redondeadas */
+    border-radius: 0.6rem; /* Esquinas redondeadas */
 /* Margen alrededor de la imagen */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
 }
 .container-button{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0.6rem;
+    margin-bottom: 3rem;
 }
 .buttons{
     color: #F1F1F1;
-    width: 140px;
-    height: 55px;
+    font-size: 1.2em;
+    width: 8.7rem;
+    height: 3.4rem;
     border-color: #E76F51;
     border: solid;
     background-color: #E76F51;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
