@@ -18,13 +18,13 @@
 }
 .slider-container, .description-container {
     height: auto;
-    margin: 60px auto;
+    margin: 50px auto;
 }
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Espacio entre las cards */
+    gap: 2em; /* Espacio entre las cards */
     margin: 0 auto;
 }
 .card{
@@ -32,8 +32,8 @@
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     place-items: center;
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5em;
+    border-radius: 1em;
 }
 .img{
     width: 100%;
@@ -46,9 +46,9 @@
 }
 .title {
     font-size: 2em;
-    padding-left: 1rem;
+    padding-left: 1em;
     text-align: left; /* Alinea el título a la izquierda */
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
 }
 #titleFirstRow {
     font-size: 1.6em;
@@ -57,7 +57,7 @@
     margin: 0;
 }
 #textFirstRow{
-    font-size: 1rem;
+    font-size: 1em;
     margin: 0;  
 }
 #check-list {
@@ -65,21 +65,21 @@
     
 }
 .check-img{
-    padding-right: 0.4rem;
+    padding-right: 0.4em;
 }
 .text-wh{
     padding: 0;
     margin: 0;
 }
 #check-list li {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 .text-pr{
     margin: 0;
 }
 #text-slider{
-    margin-top: 1rem;
+    margin-top: 50px;
     font-size: 1.5em;
 }
 .button-container{
@@ -88,8 +88,8 @@
     margin-top: 50px;
 }
 #reserv{
-    height: 3.5rem;
-    width: 11rem;
+    height: 3.5em;
+    width: 11em;
 
 }
 #button-text{
