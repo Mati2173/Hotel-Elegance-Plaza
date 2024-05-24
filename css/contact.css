@@ -1,10 +1,21 @@
 .head-text{
     margin-left: 10%;
 }
+.h2-title{
+    font-size: 2em;
+}
+.h3-title{
+    font-size: 1.15em;
+}
 .r1-container{
     margin: 2% 15% 2% 15%;
 }
 .r2-container{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.r3-container{
     margin-bottom: 10%;
 }
 .flex{
@@ -12,6 +23,9 @@
 }
 .align-center{
     align-items: center;
+}
+.place-center{
+    place-content: center;
 }
 .gapped{
     gap: 2%;
@@ -113,7 +127,10 @@ label{
     z-index: 2;
     text-align: center;
 }
-
+.iframe-formatter{
+    width: 35%;
+    height: 50vh;
+}
 /* HTML: <div class="loader"></div> */
 .loader {
     position: fixed;
@@ -151,8 +168,7 @@ label{
 .info-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 30%;
-    width: 100%;
+    width: 40%;
     margin-left: 10%;
 }
 .info-icon{
