@@ -63,10 +63,11 @@
 .buttons{
     color: #F1F1F1;
     font-size: 1.2em;
-    width: 8.7rem;
-    height: 3.4rem;
+    width: 9rem;
+    height: 3.7rem;
     border-color: #E76F51;
     border: solid;
+    cursor: pointer;
     background-color: #E76F51;
     border-radius: 0.6rem;
 }
