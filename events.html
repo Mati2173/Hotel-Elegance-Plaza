@@ -20,20 +20,21 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header id="header">
     </header>
     <section class="events">
         <div class="title">
-            <h3 class="text-pr">Eventos</h3>
+            <h2 class="text-pr">Eventos</h2>
         </div>
         <div class="slider-container">
             <div class="slider">
                 <div class="slides">
-                    <img src="img/home_1.png" class="active" draggable="false">
-                    <img src="img/home_2.png" draggable="false">
-                    <img src="img/home_3.png" draggable="false">
+                    <img src="img/evento_1.png" class="active" draggable="false">
+                    <img src="img/evento_2.png" draggable="false">
+                    <img src="img/evento_3.png" draggable="false">
                 </div>
                 <div class="dots-container">
                     <div class="dot primary-bd active" attr='0'"></div>
@@ -42,7 +43,7 @@
                 </div>
             </div>
             <div class="text">
-                <p class="text-pr">
+                <p class="text-pr" id="text-slider">
                     Nuestros salones ofrecen un espacio versátil con servicios completos para cualquier ocasión.
                     Desde bodas a reuniones corporativas, ofrecemos catering personalizado y un ambiente elegante. 
                     Con instalaciones modernas y equipo de alta calidad, creamos experiencias inolvidables. 
@@ -51,14 +52,13 @@
             </div>
         </div>
         <div class="title">
-            <h3 class="text-pr">Salon</h3>
+            <h2 class="text-pr">Salones</h2>
         </div>
         <div class="cards">
-
             <div class="card">
                 <div class="firstRow">
-                    <h1 class="text-wh" id="titleSalon">Salón de fiestas</h1>
-                    <p class="text-wh" id="textSalon">
+                    <h3 class="text-wh" id="titleFirstRow">Salón de fiestas</h3>
+                    <p class="text-wh" id="textFirstRow">
                         Celebra momentos únicos en nuestro salón.
                         Ofrecemos un espacio versátil, personalizado y lleno de comodidades.
                         Nuestro equipo experto se encarga de cada detalle.
@@ -67,12 +67,12 @@
                 </div>
                 <div >
                     <ul class="text-wh" id="check-list">
-                        <li>Decoración personalizada</li>
-                        <li>Sistema de iluminación</li>
-                        <li>Sistema de sonido</li>
-                        <li>Mobiliario y mantelería</li>
-                        <li>Servicio de catering</li>
-                        <li>Coordinador de eventos</li>
+                        <li><img src="../img/check.png" class="check-img">Decoración personalizada</li>
+                        <li><img src="../img/check.png" class="check-img">Sistema de iluminación</li>
+                        <li><img src="../img/check.png" class="check-img">Sistema de sonido</li>
+                        <li><img src="../img/check.png" class="check-img">Mobiliario y mantelería</li>
+                        <li><img src="../img/check.png" class="check-img">Servicio de catering</li>
+                        <li><img src="../img/check.png" class="check-img">Coordinador de eventos</li>
                     </ul>
                 </div>
                 <div>
@@ -81,26 +81,33 @@
             </div>
             <div class="card">
                 <div class="firstRow">
-                    <h1 class="text-wh" id="titleSalon">Salón de conferencias</h1>
-                    <p class="text-wh" id="textSalon">
+                    <h3 class="text-wh" id="titleFirstRow">Salón de conferencias</h3>
+                    <p class="text-wh" id="textFirstRow">
                         Nuestro salón para eventos empresariales ofrece un espacio versátil con tecnología de punta. 
                         Haz de tu próximo evento empresarial un éxito en nuestro espacio de primera categoría.
                     </p>
                 </div>
                 <div >
                     <ul class="text-wh" id="check-list">
-                        <li>Equipamiento audiovisual</li>
-                        <li>Equipo de soporte técnico</li>
-                        <li>Calefacción o Climatización</li>
-                        <li>Servicio de Catering</li>
-                        <li>Servicio de catering</li>
-                        <li>Mobiliario personalizable</li>
+                        <li><img src="../img/check.png" class="check-img">Equipamiento audiovisual</li>
+                        <li><img src="../img/check.png" class="check-img">Equipo de soporte técnico</li>
+                        <li><img src="../img/check.png" class="check-img">Calefacción o Climatización</li>
+                        <li><img src="../img/check.png" class="check-img">Servicio de Catering</li>
+                        <li><img src="../img/check.png" class="check-img">Servicio de catering</li>
+                        <li><img src="../img/check.png" class="check-img">Mobiliario personalizable</li>
                     </ul>
                 </div>
                 <div>
                     <img src="img/salon_conferencias.png" alt="Imag 1"class = "img">
                 </div>
             </div>
+        </div>
+        <div class="button-container">
+            <a href="contact.html">
+                <button class="form-button submit-btn text-wh accent-bg accent-bd" id="reserv">Reservar</button>
+                
+            </a>
+            
         </div>
     </section>
     <footer id="footer">

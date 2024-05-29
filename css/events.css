@@ -1,40 +1,33 @@
 .events {
     max-width: 80%;
     margin: auto; 
-    padding: 1rem;
-}
-
-
-
-.text-wh{
-    margin: 10px; /* Ajusta el margen para separar las imágenes */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 .image-container, .description-container, .slider-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .slider-container, .description-container {
     height: auto;
-    margin: 60px auto;
+    margin: 50px auto;
 }
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Espacio entre las cards */
+    gap: 2em; /* Espacio entre las cards */
     margin: 0 auto;
 }
-
 .card{
-    margin-bottom: 2rem;
     background-color: #6C8897;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     place-items: center;
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5em;
+    border-radius: 1em;
 }
 .img{
     width: 100%;
@@ -42,29 +35,59 @@
 .firstRow {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 .title {
-    font-size: 2rem;
-    padding-left: 1rem;
+    padding-left: 1em;
     text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 50px;
 }
-#titleSalon {
-    font-size: 2rem;
-    padding-bottom: 1rem; /* Espacio entre el título y el texto */
+#titleFirstRow {
+    font-size: 1.6em;
+    padding-bottom: 1em; /* Espacio entre el título y el texto */
     text-align: left; /* Alinea el título a la izquierda */
+    margin: 0;
 }
-#textSalon{
-    font-size: 1rem
-    
+#textFirstRow{
+    font-size: 1em;
+    margin: 0;  
 }
 #check-list {
     list-style-type: none; /* Elimina los estilos predeterminados de la lista */
     
 }
+.check-img{
+    padding-right: 0.4em;
+}
 
 #check-list li {
-    padding-left: 20px; /* Espacio para la imagen */
-    background: url('../img/check.png') no-repeat left center; /* Ruta de la imagen y posición */
-    background-size: 16px; /* Tamaño de la imagen */
-    margin-bottom: 1rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+#text-slider{
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#reserv{
+    height: 3.5em;
+    width: 11em;
+
+}
+#button-text{
+    font-size: 1.2em;
+}
+/* Estilos re definidos */
+.text-pr{
+    margin: 0;
+    font-size: 2em;
+}
+.text-wh{
+    margin: 10px; /* Ajusta el margen para separar las imágenes */
+    padding: 0;
 }
