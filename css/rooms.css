@@ -1,6 +1,7 @@
 .tittles{
     color: #234C63;
     font-size: 2em;
+    margin-top: 0% ;
 }
 
 .container{
@@ -8,8 +9,10 @@
     align-items: center;
     max-width: 82%;
     height: auto;
-    padding: 2%;
-    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container-cards{
@@ -58,16 +61,17 @@
     display: flex;
     justify-content: center;
     margin-top: 0.6rem;
-    margin-bottom: 3rem;
 }
 .buttons{
     color: #F1F1F1;
     font-size: 1.2em;
+    text-align: center;
+    transition-duration: 0.4s;
     width: 9rem;
     height: 3.7rem;
     border-color: #E76F51;
     border: solid;
     cursor: pointer;
     background-color: #E76F51;
-    border-radius: 0.6rem;
+    border-radius: 10px 10px;
 }
