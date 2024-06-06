@@ -5,8 +5,6 @@
 }
 
 .container{
-    display: grid;
-    align-items: center;
     max-width: 82%;
     height: auto;
     margin-left: auto;
@@ -17,7 +15,6 @@
 
 .container-cards{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between; /* Distribuye las tarjetas uniformemente */
 }
 
@@ -49,29 +46,38 @@
     text-align: center;
 }
 .card-img{
-    width: 19.5rem; /* Fija el ancho de la imagen */
-    height: 15.7rem; /* Fija la altura de la imagen */
-    object-fit: contain; /* Ajusta la imagen para que cubra el área establecida */
+    width: 96%;
+    height: auto;
+    max-width: 100%; /* Asegura que la imagen no sobresalga del contenedor */
+    object-fit:cover; /* Ajusta la imagen para que cubra el área establecida */
     border-radius: 0.6rem; /* Esquinas redondeadas */
 /* Margen alrededor de la imagen */
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
+    margin: 2%;
+
 }
 .container-button{
     display: flex;
-    justify-content: center;
+    place-content: center;
     margin-top: 0.6rem;
 }
 .buttons{
-    color: #F1F1F1;
-    font-size: 1.2em;
+    margin: 2% 0 2% 1%;
     text-align: center;
-    transition-duration: 0.4s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px 10px;
     width: 9rem;
     height: 3.7rem;
-    border-color: #E76F51;
-    border: solid;
-    cursor: pointer;
-    background-color: #E76F51;
-    border-radius: 10px 10px;
+
+}
+.submit-btn{
+    transition-duration: 0.4s;
+}
+.submit-btn:hover{
+    color: #E76F51;
+    background-color: transparent;
 }
