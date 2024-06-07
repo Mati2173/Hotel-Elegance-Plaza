@@ -19,8 +19,8 @@
 }
 
 .card {
+    max-height: 100% ;
     width: 20.7rem; /* Ancho de la tarjeta */
-    height: 38.3rem;
     background-color: #6C8897;
     border: 1px solid #ddd; /* Borde de la tarjeta */
     border-radius: 0.5rem; /* Borde redondeado */
