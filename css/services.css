@@ -1,12 +1,11 @@
 .services {
+    width: 80%;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 80%;
-    height: auto;
-    margin: auto;
 }
 
-.head-text {
+.text-pr {
     font-size: 2em;
 }
 
@@ -34,13 +33,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
 }
 
 .img {
     max-width: 100%;
     height: auto;
-    padding-right: 0.4em
 }
 
 .card-text {
