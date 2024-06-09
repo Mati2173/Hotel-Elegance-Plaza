@@ -13,12 +13,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    gap: 3em;
     margin: 0 auto;
 }
 
 .card {
-    margin-bottom: 2em;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     place-items: center;
