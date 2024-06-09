@@ -7,14 +7,14 @@
 }
 
 .head-text {
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .container-services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Espacio entre las cards */
+    gap: 2em;
     margin: 0 auto;
 }
 
@@ -23,8 +23,8 @@
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     place-items: center;
-    padding: 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5em;
+    border-radius: 1em;
     width: 100%;
     box-sizing: border-box;
     gap: 2em;
@@ -40,6 +40,7 @@
 .img {
     max-width: 100%;
     height: auto;
+    padding-right: 0.4em
 }
 
 .card-text {
@@ -61,37 +62,13 @@
 }
 
 .check-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    margin: 0 1em;
+    padding-right: 0.4em;
 }
 
 .list-item {
     display: flex;
     align-items:center;
-}
-
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .img {
-        width: 100%;
-    }
-
-    .card-text {
-        text-align: center;
-    }
-
-    .check-list {
-        margin: 0;
-    }
-
-    .list-item {
-        justify-content: flex-start; /* Alinear a la izquierda */
-    }
+    gap: 0.8em;
+    padding-left: 0;
+    margin: 0 0 1em 0; /* Espacio entre divs */
 }
