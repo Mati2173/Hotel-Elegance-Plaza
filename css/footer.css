@@ -1,0 +1,57 @@
+#footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-content {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    margin: 40px 0;
+}
+
+.footer-item img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-item h3 {
+    font-weight: normal;
+    font-size: 1.15em;
+}
+
+.footer-item-top h3 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.footer-item-top, .footer-item-bottom {
+    margin: 15px 0;
+}
+
+#LogoSC, #LogoPBT {
+    width: 80px;
+    height: auto;
+    margin: 0;
+}
+
+#logo-sc-container, #logo-pbt-container {
+    display: flex;
+    justify-content: center;
+}

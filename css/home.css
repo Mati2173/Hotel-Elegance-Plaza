@@ -1,0 +1,25 @@
+.image-container, .description-container, .slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-container, .description-container {
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.image-container img {
+    width: 80%;
+    height: auto;
+}
+
+.description-container > p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.description-container > p > span {
+    font-weight: bold;
+    display: block;
+}

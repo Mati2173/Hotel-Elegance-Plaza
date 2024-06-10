@@ -1,0 +1,65 @@
+/*Estilo general para el body*/
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Clases con los colores para fondos de un elemento HTML*/
+.primary-bg {
+    background-color: #234C63;
+}
+.secondary-bg {
+    background-color: #6C8897;
+}
+.accent-bg {
+    background-color: #E76F51;
+}
+.accent-var-bg {
+    background-color: #EF9F8B;
+}
+
+/* Clases con los colores para el texto de un elemento HTML*/
+.text-dk {
+    color: #1F1F1F;
+}
+.text-wh {
+    color: #F1F1F1;
+}
+.text-gr {
+    color: #585858;
+}
+.text-pr {
+    color: #234C63;
+}
+.text-snd {
+    color: #6C8897;
+}
+.text-acc {
+    color: #E76F51;
+}
+.text-acc-var {
+    color: #EF9F8B;
+}
+
+/* Clases con los colores para los bordes de un elemento HTML*/
+.primary-bd {
+    border-color: #234C63;
+    border-style: solid;
+}
+.secondary-bd {
+    border-color: #6C8897;
+    border-style: solid;
+}
+.accent-bd {
+    border-color: #E76F51;
+    border-style: solid;
+}
+.accent-var-bd {
+    border-color: #EF9F8B;
+    border-style: solid;
+}
+.grey-bd {
+    border-color: #585858;
+    border-style: solid;
+}

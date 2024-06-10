@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <!--Fuente utilizada en la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function(){$('#header').load('header.html');});</script>
+    <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
+    <!--CSS necesario para Header y Footer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CSS General-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--CSS Services-->
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <header id="header"></header>
+    
+    <section class="services">
+        <div class="head-text">
+            <h2 class="text-pr">Experiencias / Servicios</h2>
+        </div>
+        <div class="container-services">
+            <div class="card secondary-bg">
+                <div class="img-container">
+                    <img src="img/serv_piscina.png" alt="imag 1"class = "img">
+                </div>
+                <div class="card-text">
+                    <h3 class="text-wh" id="titlePS">Piscina</h3>
+                    <p class="text-wh" id="textPS">
+                        Disfruta de un oasis de frescura en 
+                        nuestra piscina. Relájate al sol o 
+                        sumérgete en aguas cristalinas.
+                        Nuestro personal está listo para
+                        atenderte. ¡Suma un toque de 
+                        placer a tu estancia!
+                    </p>
+                </div>
+                <div class="text-wh check-list">
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Bar o servicio de bebidas</div>
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Actividades acuáticas</div>
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Calefacción o climatización</div>
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Vigilancia y seguridad</div>
+                </div>
+            </div>
+            <div class="card secondary-bg">
+                <div>
+                    <img src="img/serv_spa.png" alt="imag 2"class = "img">
+                </div>
+                <div class="card-text">
+                    <h3 class="text-wh" id="titlePS">Spa</h3>
+                    <p class="text-wh" id="textPS">
+                        Experimenta tratamientos
+                        personalizados y disfruta de
+                        instalaciones de lujo, como sauna y
+                        piscina de hidroterapia. Nuestro
+                        equipo experto te guiará hacia el
+                        equilibrio y la relajación.
+                    </p>
+                </div>
+                <div class="text-wh check-list">
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Masajes</div>
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Tratamientos faciales</div>
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Tratamientos corporales</div>
+                    <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Hidroterapia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>

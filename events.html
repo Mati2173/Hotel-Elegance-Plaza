@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Plaza</title>
+    <!--Fuente utilizada en la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function(){$('#header').load('header.html');});</script>
+    <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
+    <!--CSS necesario para Header y Footer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CSS General-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <header id="header">
+    </header>
+    <section class="events">
+        <div class="title">
+            <h2 class="text-pr">Eventos</h2>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/evento_1.png" class="active" draggable="false">
+                    <img src="img/evento_2.png" draggable="false">
+                    <img src="img/evento_3.png" draggable="false">
+                </div>
+                <div class="dots-container">
+                    <div class="dot primary-bd active" attr='0'"></div>
+                    <div class="dot primary-bd" attr='1'></div>
+                    <div class="dot primary-bd" attr='2'></div>
+                </div>
+            </div>
+            <div class="text">
+                <p class="text-pr" id="text-slider">
+                    Nuestros salones ofrecen un espacio versátil con servicios completos para cualquier ocasión.
+                    Desde bodas a reuniones corporativas, ofrecemos catering personalizado y un ambiente elegante. 
+                    Con instalaciones modernas y equipo de alta calidad, creamos experiencias inolvidables. 
+                    Confía en nosotros para hacer de tu evento un momento especial.
+                </p>
+            </div>
+        </div>
+        <div class="title">
+            <h2 class="text-pr">Salones</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="firstRow">
+                    <h3 class="text-wh" id="titleFirstRow">Salón de fiestas</h3>
+                    <p class="text-wh" id="textFirstRow">
+                        Celebra momentos únicos en nuestro salón.
+                        Ofrecemos un espacio versátil, personalizado y lleno de comodidades.
+                        Nuestro equipo experto se encarga de cada detalle.
+                        ¡Haz de tu evento una experiencia inolvidable!
+                    </p>
+                </div>
+                <div class="text-wh check-list">
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Decoración personalizada</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Sistema de iluminación</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Sistema de sonido</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Mobiliario y mantelería</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Servicio de catering</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Coordinador de eventos</div>
+                </div>
+                <div>
+                    <img src="img/salon_fiestas.png" alt="Imag 1"class = "img">
+                </div>
+            </div>
+            <div class="card">
+                <div class="firstRow">
+                    <h3 class="text-wh" id="titleFirstRow">Salón de conferencias</h3>
+                    <p class="text-wh" id="textFirstRow">
+                        Nuestro salón para eventos empresariales ofrece un espacio versátil con tecnología de punta. 
+                        Haz de tu próximo evento empresarial un éxito en nuestro espacio de primera categoría.
+                    </p>
+                </div>
+                <div class="text-wh check-list">
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Equipamiento audiovisual</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Equipo de soporte técnico</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Calefacción o Climatización</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Servicio de Catering</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Servicio de catering</div>
+                        <div class="list-item"><img src="img/check.png" alt="imagCheck" class="check">Mobiliario personalizable</div>
+                </div>
+                <div>
+                    <img src="img/salon_conferencias.png" alt="Imag 1"class = "img">
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="contact.html">
+                <button class="form-button submit-btn text-wh accent-bg accent-bd" id="reserv">Reservar</button>
+                
+            </a>
+            
+        </div>
+    </section>
+    <footer id="footer">
+    </footer>
+    <script src="js/slider.js"></script>
+</body>
+</html>

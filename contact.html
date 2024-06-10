@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Plaza</title>
+    <!--Fuente utilizada en la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <!--JQuery utilizado para incorporar HTML perteneciente a Header y Footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function(){$('#header').load('header.html');});</script>
+    <script>$(document).ready(function(){$('#footer').load('footer.html');});</script>
+    <!-- Funcionalidad de calendario -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <!--CSS necesario para Header y Footer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--CSS General-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header id="header">
+    </header>
+    <div class="contact">
+        <div>
+            <h2 class="h2-title text-pr">Reserva</h2>
+        </div>
+        <div class="r1-container">
+            <form action="" id="form">
+                <div class="softborder secondary-bg">
+                    <div class="form-container">
+                        <div class="option-container oc-left">
+                            <label for="fname" class="text-wh">Nombre</label>
+                            <input type="text" name="fname" id="fname" class="form-input text-dk grey-bd" required minlength="2" maxlength="40">
+                        </div>
+                        <div class="option-container oc-left">
+                            <label for="arrival" class="text-wh">Arribo</label>
+                            <div class="flex align-center">
+                                <input type="text" class="datepicker form-input text-dk grey-bd" id="arrival" required readonly>
+                            </div>
+                        </div>
+                        <div class="option-container oc-left">
+                            <label for="mail" class="text-wh">Mail</label>
+                            <input type="email" name="email" id="email" class="form-input text-dk grey-bd" required>
+                        </div>
+                        <div class="option-container oc-left">
+                            <label for="arrival" class="text-wh">Partida</label>
+                            <div class="flex align-center">
+                                <input type="text" class="datepicker form-input text-dk grey-bd" id="leave" required readonly>
+                            </div>
+                        </div>
+                        <div class="option-container oc-left">
+                            <label for="phone" class="text-wh">Teléfono</label>
+                            <input type="tel" name="phone" id="phone" class="form-input text-dk grey-bd" minlength="6" maxlength="10" required>
+                        </div>
+                        <div class="option-container oc-left">
+                            <label for="type" class="text-wh">Tipo de reserva</label>
+                            <div class="flex align-center">
+                                <select name="type" id="type" class="form-input text-dk grey-bd select" required>
+                                    <option disabled selected value="">Seleccione una opción</option>
+                                    <option value="Suite">Suite</option>
+                                    <option value="Doble">Doble</option>
+                                    <option value="Triple">Triple</option>
+                                    <option value="SalonDeFiestas">Salón de fiestas</option>
+                                    <option value="SalonDeConferencias">Salón de conferencias</option>
+                                </select>
+                                <img src="img/icons/espacio-vacio.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-button-container">
+                    <input type="reset" value="Borrar" class="form-button reset-btn text-snd secondary-bd" id="reset">
+                    <input type="submit" value="Enviar" class="form-button submit-btn text-wh accent-bg accent-bd" id="submit">
+                </div>
+                <div class="overlay hidden" id="overlay-test"></div>
+                <div class="hidden" id="loading"></div>
+                <div class="primary-bg text-wh modal hidden" id="thanksmodal">
+                    <p>¡Reserva exitosa! <br>
+                        Su reserva ha sido confirmada. <br>
+                        En breve, recibirá un correo electrónico con los detalles completos. ¡Gracias por elegirnos!
+                    </p>
+                    <button class="form-button submit-btn text-wh accent-bg accent-bd" id="accept">Aceptar</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h2 class="h2-title text-pr">Ubicación</h2>
+        </div>
+        <div class="r2-container">
+            <div class="flex place-center">
+                <iframe class="iframe-formatter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.18126603088!2d-65.4102876!3d-24.789245849999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3bca9b9277b%3A0x9f2d4ce517eb688b!2sPlaza%209%20de%20Julio%2C%20Caseros%20500%2C%20Salta!5e0!3m2!1sen!2sar!4v1715629082092!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="info-container text-pr">
+                    <div>
+                        <div class="flex align-center">
+                            <img src="img/icons/ubicacion-icono.png" alt="" class="info-icon">
+                            <h3 class="h3-title">Dirección</h3>
+                        </div>
+                        <p class="written-info">Av. Principal 123</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div class="flex align-center">
+                            <img src="img/icons/telefono-icono.png" alt="" class="info-icon">
+                            <h3 class="h3-title">Teléfono</h3>
+                        </div>
+                        <p class="written-info">+54 9 387 4123456</p>
+                    </div>
+                    <div>
+                        <div class="flex align-center">
+                            <img src="img/icons/whatsapp-icono.png" alt="" class="info-icon">
+                            <h3 class="h3-title">WhatsApp</h3>
+                        </div>
+                        <p class="written-info">+54 9 387 4123456</p>
+                    </div>
+                    <div>
+                        <h3 class="h3-title written-info">Reservas individuales</h3>
+                        <div class="flex align-center">
+                            <img src="img/icons/email-icono.png" alt="" class="info-icon">
+                            <p>reservas@email.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="h3-title written-info">Reservas grupales</h3>
+                        <div class="flex align-center">
+                            <img src="img/icons/email-icono.png" alt="" class="info-icon">
+                            <p>ventas@email.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="h3-title written-info">Eventos</h3>
+                        <div class="flex align-center">
+                            <img src="img/icons/email-icono.png" alt="" class="info-icon">
+                            <p>eventos@email.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="h3-title written-info">Redes sociales</h3>
+                        <div class="flex align-center gapped">
+                            <a href="#"><img src="img/icons/facebook-icono.png" alt="" class="info-icon"></a>
+                            <a href="#"><img src="img/icons/instagram-icono.png" alt="" class="info-icon"></a>
+                            <p>‎ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>

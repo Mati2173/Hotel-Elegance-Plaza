@@ -1,0 +1,87 @@
+#nav-item-rooms {
+    color: #E76F51;
+}
+
+.tittles{
+    color: #234C63;
+    font-size: 2em;
+    margin-top: 0% ;
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between; /* Distribuye las tarjetas uniformemente */
+}
+
+.card {
+    max-height: 100% ;
+    width: 20.7rem; /* Ancho de la tarjeta */
+    background-color: #6C8897;
+    border: 1px solid #ddd; /* Borde de la tarjeta */
+    border-radius: 0.5rem; /* Borde redondeado */
+    margin: 0.6rem; /* Margen entre las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+.card-tittle{
+    justify-content: center;
+    color: #F1F1F1;
+    margin-top: 0%;
+
+}
+.card-text{
+    text-align:start;
+    font-size: 1em;
+    margin-left: 1.3rem;
+    margin-right: 1rem;
+}
+
+.card-content {
+    color: #F1F1F1;
+    text-align: center;
+}
+.card-img{
+    width: 96%;
+    height: auto;
+    max-width: 100%; /* Asegura que la imagen no sobresalga del contenedor */
+    object-fit:cover; /* Ajusta la imagen para que cubra el área establecida */
+    border-radius: 0.6rem; /* Esquinas redondeadas */
+/* Margen alrededor de la imagen */
+    margin: 2%;
+
+}
+.container-button{
+    display: flex;
+    place-content: center;
+    margin-top: 0.6rem;
+}
+.buttons{
+    margin: 2% 0 2% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px 10px;
+    width: 9rem;
+    height: 3.7rem;
+
+}
+.submit-btn{
+    transition-duration: 0.4s;
+}
+.submit-btn:hover{
+    color: #E76F51;
+    background-color: transparent;
+}
