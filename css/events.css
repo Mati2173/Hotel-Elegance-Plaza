@@ -1,7 +1,6 @@
 #nav-item-events {
     color: #E76F51;
 }
-
 .events {
     max-width: 80%;
     margin: auto; 
@@ -43,7 +42,6 @@
     margin: 0;
 }
 .title {
-    padding-left: 1em;
     text-align: left; /* Alinea el título a la izquierda */
     margin-bottom: 50px;
 }
@@ -64,7 +62,6 @@
 .check-img{
     padding-right: 0.4em;
 }
-
 #check-list li {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
@@ -94,4 +91,36 @@
 .text-wh{
     margin: 10px; /* Ajusta el margen para separar las imágenes */
     padding: 0;
+}
+.form-button-container{
+    display: flex;
+    place-content: end;
+}
+.form-button{
+    margin: 2% 0 2% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px 10px;
+    padding: 2% 5% 2% 5%;
+}
+.submit-btn{
+    transition-duration: 0.4s;
+}
+.submit-btn:hover{
+    color: #E76F51;
+    background-color: transparent;
+}
+.check-list {
+    padding-right: 0.4em;
+}
+
+.list-item {
+    display: flex;
+    align-items:center;
+    gap: 0.8em;
+    padding-left: 0;
+    margin: 0 0 1em 0; /* Espacio entre divs */
 }
