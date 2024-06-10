@@ -2,8 +2,10 @@
     color: #E76F51;
 }
 
-.head-text{
-    margin-left: 10%;
+.contact{
+    margin: 50px auto;
+    width: 80%;
+    height: auto;
 }
 .h2-title{
     font-size: 2em;
@@ -15,7 +17,6 @@
     margin: 2% 15% 2% 15%;
 }
 .r2-container{
-    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -132,8 +133,9 @@ label{
     text-align: center;
 }
 .iframe-formatter{
-    width: 35%;
+    width: 70%;
     height: 50vh;
+    margin-right: 10%;
 }
 /* HTML: <div class="loader"></div> */
 .loader {
@@ -172,8 +174,7 @@ label{
 .info-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 40%;
-    margin-left: 10%;
+    width: 49%;
 }
 .info-icon{
     width: 28px;
